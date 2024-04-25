@@ -27,6 +27,8 @@ class DispatchesNotifiableTest extends TestCase
     public function should_dispatch_notifiable_for_subscribed_user()
     {
         //Arrange
+        Notification::fake();
+
         /** @var User $user */
         $user = User::factory()->create();
 

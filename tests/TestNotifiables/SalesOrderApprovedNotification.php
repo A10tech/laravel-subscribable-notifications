@@ -22,7 +22,7 @@ class SalesOrderApprovedNotification extends Notification implements Subscribabl
 
     public function via($notifiable)
     {
-        return [];
+        return ['mail'];
     }
 
     public static function subscribableNotificationType(): string
